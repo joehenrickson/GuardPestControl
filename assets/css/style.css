@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -39,4 +40,100 @@ header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
+}
+
+footer {
+  background: #000;
+  width: 100%;
+  padding: 40px 35px;
+}
+
+footer h2 {
+  display: inline;
+  color: #77ad45;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #77ad45;
+}
+
+section {
+  padding: 60px;
+}
+
+.hero {
+  background-image: url('../images/Family.jpeg');
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-form {
+  background-color: #77ad45;
+  padding: 20px;
+  width: 500px;
+  color: #000;
+  border: solid 3px #ccc;
+  position: absolute;
+  bottom: 120px;
+  right: 140px;
+}
+
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
+.hero-form h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.form-input {
+  border: 1px solid #ccc;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #ccc;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hero-form label {
+  margin: 0 5px;
+}
+
+.hero-form button {
+  color: #77ad45;
+  background-color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.outer-services {
+  width: 100%;
+  display: flex;
+}
+
+.services {
+  display: inline-block;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+  border-radius: 5px;
+  color: #77ad45;
+  font: 24px bold;
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
 }

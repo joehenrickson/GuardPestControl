@@ -10,7 +10,7 @@
         <!-- navigation -->
         <header>
         <h1>
-            <a href="/">KLEIN PEST CONTROL</a>
+            <a href="/">GUARD PEST CONTROL</a>
         </h1>
         <nav>
             <ul>
@@ -31,13 +31,51 @@
         </header>
 
         <!-- hero/jumbotron -->
-        <section>
-
+        <section class="hero">
+            <div class="hero-form">
+                <h3>Get Started Today</h3>
+                <p>Fill out this form and we will get back to you right away</p> 
+                <form>
+                    <label for="name">Enter full name:</label>
+                    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+                    <label for="email">Enter email address:</label>
+                    <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
+                    <label for="phone">Enter your phone number:</label>
+                    <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+                    <p>
+                        Are you having any current pest issues?
+                        <input type="radio" name="pest-confirm" id="pest-yes" />
+                        <label for="pest-yes">Yes</label>
+                        <input type="radio" name="pest-confirm" id="pest-no" />
+                        <label for="pest--no">No</label>
+                    </p>
+                    <p>
+                        <label for="checkbox" >
+                            I acknowledge that I am at least 18 years of age.
+                        </label>
+                        <input type="checkbox" name="age-confirm" id="checkbox" />
+                    </p>
+                    <button type="submit">
+                        Submit Response
+                    </button>
+                </form>   
+            </div>
         </section>
 
         <!-- "Our Services" section -->
         <section>
             <h2>Our Services</h2>
+            <div class="outer-services">
+              <div class="services">
+                Residential Services
+              </div>
+              <div class="services">
+                Commercial Services
+              </div>
+              <div class="services">
+                Wildlife Services
+              </div>
+            </div>
         </section>
 
         <!-- "Service Area" section -->
@@ -58,6 +96,10 @@
         <!-- footer -->
         <footer>
             <h2>Made with love by Guard Pest Control</h2>
+            <div>
+                <a href="#">Read Our Privacy Policy</a><br />
+                &copy; 2022 Guard Pest Control
+            </div>
         </footer>
     </body>
 </html>
