@@ -153,11 +153,7 @@ section {
 .hero {
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
   background-image: url('/assets/images/Family3.jpeg');
-=======
-  background-image: url("/assets/images/Family3.jpeg");
->>>>>>> 5debb00cb7300f4eb86225aceefa235089e43308
   background-size: cover;
   background-position: center;
   position: relative;
