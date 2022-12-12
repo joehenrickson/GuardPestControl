@@ -63,6 +63,10 @@ h1 {
 }
 
 @media screen and (max-width: 920px) {
+  header img {
+    align-items: center;
+    width: 100px;
+  }
   .topnav a {
     display: none;
   }
@@ -70,9 +74,13 @@ h1 {
     background-color: #ffffff;
   }
   .topnav a.icon {
-    float: none;
     display: inline;
-    z-index: 2;
+    position: fixed;
+    top: -50px;
+    right: 10px;
+    padding: 0;
+    height: 10px;
+    z-index: 1;
   }
   .topnav button {
     display: none;
@@ -85,19 +93,33 @@ h1 {
     background-color: #666666;
     z-index: 1;
     border-radius: 7px;
+    line-height: 30px;
   }
   .topnav.responsive .icon {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    border-style: none;
-    color: #666666;
+    z-index: 2;
+    top: -50px;
+    right: 10px;
+    height: 10px;
+    color: #77ad45;
+    padding: 0;
+    margin: 0;
   }
   .topnav.responsive a {
-    float: none;
     display: inline;
-    text-align: left;
+    float: left;
+    width: 95%;
+    padding: 10px;
+    margin-left: 5px;
     color: #ffffff;
+  }
+  .topnav.responsive a:hover {
+    background-color: #77ad45;
+    color: #000000;
+  }
+  .topnav.responsive button {
+    display: inline;
+    width: 95%;
+    margin: 0 0 5px 5px;
   }
 }
 
@@ -131,7 +153,7 @@ section {
 .hero {
   display: flex;
   flex-wrap: wrap;
-  background-image: url("/assets/images/guard-pest-control-residential-banner.jpeg");
+  background-image: url('/assets/images/guard-pest-control-residential-banner.jpeg');
   background-size: cover;
   background-position: center;
   position: relative;
