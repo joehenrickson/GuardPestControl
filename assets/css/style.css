@@ -62,29 +62,42 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+@media screen and (max-width: 920px) {
+  .topnav a {
     display: none;
   }
+  .topnav a:hover {
+    background-color: #ffffff;
+  }
   .topnav a.icon {
-    float: right;
-    display: block;
+    float: none;
+    display: inline;
+    z-index: 2;
+  }
+  .topnav button {
+    display: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 920px) {
   .topnav.responsive {
-    position: relative;
+    position: fixed;
+    background-color: #666666;
+    z-index: 1;
+    border-radius: 7px;
   }
   .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    border-style: none;
+    color: #666666;
   }
   .topnav.responsive a {
     float: none;
-    display: block;
+    display: inline;
     text-align: left;
+    color: #ffffff;
   }
 }
 
@@ -125,9 +138,16 @@ section {
 }
 
 @media (max-width: 800px) {
+  .hero {
+    margin: 0px;
+    padding: 5px;
+  }
   .hero-modal,
   .hero-form {
     flex: 100%;
+  }
+  .hero-modal {
+    margin: 5px;
   }
 }
 
@@ -156,7 +176,6 @@ section {
   background-color: #ccc;
   opacity: 90%;
   padding: 20px;
-  min-width: 250px;
   margin: 0 40px;
   color: #000;
   border-radius: 8px;
@@ -195,77 +214,4 @@ section {
   border-radius: 7px;
   padding: 10px 20px;
   font-size: 16px;
-}
-
-.outer-services {
-  width: 100%;
-  display: flex;
-}
-
-.services {
-  display: inline-block;
-  width: 30%;
-  justify-content: center;
-  align-items: center;
-  background-color: #ccc;
-  border-radius: 5px;
-  color: #77ad45;
-  font: 24px bold;
-  text-align: center;
-  padding: 20px;
-  margin: 20px auto;
-}
-
-.intro {
-  text-align: center;
-}
-
-.intro p {
-  line-height: 1.7;
-  color: #cccccc;
-  width: 80%;
-  font-size: 20px;
-  margin: 0 auto;
-}
-
-.steps {
-  text-align: center;
-  background: #77ad45;
-}
-
-.steps div {
-  margin-bottom: 80px;
-}
-
-.steps img {
-  width: 15%;
-  margin: 10px 0;
-}
-
-.steps h3 {
-  color: #cccccc;
-  font-size: 46px;
-  margin-top: 10px;
-}
-
-.steps p {
-  color: #77ad45;
-  font-size: 23px;
-}
-
-.section-title {
-  font-size: 55px;
-  color: #77ad45;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
-  border-bottom: 3px solid;
-}
-
-.primary-border {
-  border-color: #cccccc;
-}
-
-.secondary-border {
-  border-color: #77ad45;
 }
