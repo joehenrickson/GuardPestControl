@@ -243,8 +243,7 @@ footer a {
 .footer {
   width: 100%;
   position: relative;
-  margin-top: 45px;
-  padding-top: 90px;
+  padding: 30px;
   background: #000;
   color: #ffffff;
   font-weight: 300;
