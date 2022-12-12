@@ -1,0 +1,1381 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #000;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    color: #000;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #77ad45;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background-color: #77ad45;
+    color: #000;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    border-radius: 5px;
+    left: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 996;
+}
+
+.back-to-top:hover {
+    color: #ffffff;
+    background-color: #000;
+}
+
+.back-to-top i {
+    padding-top: 10px;
+}
+
+/*******************************/
+/********** Header CSS *********/
+/*******************************/
+.header {
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 0;
+    background: #f8f9fa;
+    z-index: 994;
+    margin: 0px;
+}
+
+.header.home {
+    position: relative;
+    margin-bottom: 45px;
+    opacity: 100%;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .header-top {
+    position: fixed;
+    background-color: #f8f9fa;
+    padding-bottom: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.header .brand {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background-color: #f8f9fa;
+    z-index: 996;
+}
+
+.header .brand a {
+    color: #000;
+}
+
+.header .brand img {
+    position: relative;
+    width: 550px;
+    float: left;
+    padding-left: 50px;
+}
+
+.header .topbar {
+    position: fixed;
+    top: 40px;
+    padding: 0px;
+    margin: 0px;
+    right: 0px;
+    width: 350px;
+    background: transparent;
+    z-index: 990;
+}  
+
+.header .topbar .topbar-col {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
+.header .topbar-col a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #77ad45;
+}
+
+.header .topbar-col a i {
+    margin-right: 10px;
+    color: #fff;
+}
+
+.header .topbar-col a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.header .topbar-col a i:hover {
+    color: #fff;
+    font-size: 20px;
+    background-color: #000;
+}
+
+/*********************************************/
+/************** Navbar container *************/
+/*********************************************/
+.navbar {
+  position: fixed;
+  background-color: #f8f9fa;
+  margin-top: 0px;
+  right: 300px;
+  top: 30px;
+  padding-right: 60px;
+  font-family: Montserrat, sans-serif;
+  z-index: 999;
+}
+
+.navbar .navbar-expand {
+  margin-top: 0px;
+}
+
+.navbar-toggler {
+        background-color: #77ad45;
+}
+
+/* Links inside the navbar */
+
+.navbar a {
+  float: left; 
+  font-size: 16px;
+  border-radius: 7px;
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+  padding: 15px 16px;
+  text-decoration: none;
+}
+
+.navbar a:active {
+  background-color: #77ad45;
+  color: #fff;
+}
+
+.header .navbar .btn {
+    position: relative;
+    float: left;
+    padding: 15px 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    background: #77ad45;
+    transition: .3s;
+}
+
+.header .navbar .btn:hover {
+    color: #000000;
+    background: #77ad45;
+}
+
+.header .navbar .btn i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: visible;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  color: #000;
+  padding: 14px 16px;
+  background-color: #f8f9fa;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a green background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #77ad45;
+  color: #fff;
+  border-radius: 7px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  opacity: 95%;
+  color: #fff;
+  min-width: 120px;
+  border-radius: 7px;
+  z-index: 999;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  z-index: 998;
+}
+
+/* Add a green background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #77ad45;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/******************************************/
+/****************Hero Container************/
+/******************************************/
+
+
+.header .hero {
+    padding-top: 230px;
+    padding-bottom: 60px;
+}
+
+.row {
+    margin: 0px;
+    z-index: 2;
+}
+
+.hero .col-md-7 {
+    background-color: rgba(102, 102, 102, .9);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 30px 20px;
+    border-radius: 7px;
+}
+
+.header .hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header .hero h1 span {
+    color: #77ad45;
+}
+
+.header .hero h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header .hero h2 span {
+    color: #77ad45;
+}
+
+.header .hero p {
+    margin: 10px 0 20px 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.header .hero a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 7px;
+    padding: 5px;
+}
+ 
+.header .hero a:hover {
+    color: #fff;
+    background-color: #77ad45;
+}
+
+.header .hero a.btn {
+    position: relative;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #77ad45;
+    opacity: 100%;
+    transition: .3s;
+}
+
+.header .hero a.btn:hover {
+    color: #fff;
+    background: #000;
+}
+
+.header .hero .form {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, .3);
+    border-radius: 5px;
+}
+
+.header .hero .form h3 {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.header .hero .form input,
+.header .hero .form select,
+.header .hero .form textarea {
+    margin-bottom: 15px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, .2);
+}
+
+.header .hero .form textarea {
+    height: 75px;
+}
+
+.header .hero .form select,
+.header .hero .form input::placeholder,
+.header .hero .form textarea::placeholder {
+    color: #ffffff;
+}
+
+.header .hero .form select option:not(:checked) {
+    color: #000;
+}
+
+.header .hero .form .btn {
+    position: relative;
+    padding: 10px 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #77ad45;
+    transition: .3s;
+}
+
+.header .hero .form .btn:hover {
+    color: #000;
+    background: #ffffff;
+}
+
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    left: calc(50% - 50px);
+    bottom: 0;
+    background: linear-gradient(to left, #77ad45, #CCCCCCC, #77ad45);
+    border-radius: 100%;
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 9px;
+    left: calc(50% - 10px);
+    bottom: -3px;
+    background: #CCCCCCC;
+    border-radius: 5px;
+}
+
+.section-header p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.section-header h2 {
+    color: #000;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.section-header h3 {
+    color: #77ad45;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.section-header.left {
+    text-align: left;
+}
+
+.section-header.left::before {
+    width: 60px;
+    left: 0;
+    background: linear-gradient(to left, #77ad45, #CCCCCCC, #CCCCCCC);
+    border-radius: 0 100% 100% 0;
+}
+
+.section-header.left::after {
+    left: 0;
+    border-radius: 5px;
+}
+
+/*******************************/
+/********Service Area***********/
+/*******************************/
+
+.area {
+    margin-top: 100px;
+}
+
+.area h1 {
+    color: #000;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.area .service-area,
+.area .service-area2,
+.area .service-area3 {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+
+.area .service-area {
+    padding-left: 160px;
+}
+
+.area .service-area a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+.area .service-area a i {
+    width: 25px;
+}
+
+.area .service-area a:hover {
+    color: #fff;
+    background: #77ad45;
+    padding: 5px;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.area .service-area2 {
+    padding-left: 30px;
+}
+
+.area .service-area2 a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+.area .service-area2 a i {
+    width: 25px
+}
+
+.area .service-area2 a:hover {
+    color: #fff;
+    background: #77ad45;
+    padding: 5px;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.area .service-area3 {
+    padding-left: 50px;
+}
+
+.area .service-area3 a {
+      display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+.area .service-area3 a i {
+    width: 25px
+}
+
+.area .service-area3 a:hover {
+    color: #fff;
+    background: #77ad45;
+    padding: 5px;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+/*******************************/
+/********* Service CSS *********/
+/*******************************/
+.service {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 45px 0;
+}
+
+.service .container {
+    padding: 0px;
+}
+
+.service .green {
+    color: #77ad45;
+    font-weight: bold;
+}
+
+.service .col-lg-6 {
+    padding: 20px;
+}
+
+.service .service-item {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.service .service-item img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.service .service-item h3 {
+    margin: 0;
+    padding: 25px 15px 15px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #CCCCCCC;
+}
+
+.service .service-item p {
+    margin: 0;
+    padding: 0 25px 25px 25px;
+    font-size: 16px;
+}
+
+.service .service-item a.btn {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #77ad45;
+    transition: .3s;
+}
+
+.service .service-item:hover a.btn {
+    color: #ffffff;
+    background: #CCCCCCC;
+    font-weight: bold;
+}
+
+.service .service-item a.btn:hover {
+    color: #000000;
+    background: #77ad45;
+}
+
+
+/*******************************/
+/********* Feature CSS *********/
+/*******************************/
+.feature {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+    margin-top: 160px;
+}
+
+.feature .section-header {
+    margin-bottom: 30px;
+}
+
+.feature a.btn {
+    margin-top: 10px;
+    padding: 15px 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #77ad45;
+    transition: .3s;
+}
+
+.feature a.btn:hover {
+    color: #ffffff;
+    background: #CCCCCCC;
+}
+
+.feature .feature-item {
+    margin-bottom: 30px;
+}
+
+.feature .feature-item img {
+    width: 100%;
+    border-radius: 5px;
+    padding-right: 20px;
+}
+
+.feature .feature-item h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #CCCCCCC;
+}
+
+.feature .feature-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/*******************************/
+/****** Pricing Plan CSS *******/
+/*******************************/
+
+.price {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
+
+.price .price-item {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    margin-bottom: 30px;
+}
+
+.price .price-header {
+    padding: 30px 0 50px 0;
+    color: #000000;
+    background: #77ad45;
+    border-radius: 7px;
+}
+
+.price .featured-item .price-header {
+    color: #ffffff;
+    background: #CCCCCCC;
+}
+
+.price .price-icon {
+    margin-bottom: 15px;
+}
+
+.price .price-icon i {
+    display: inline-block;
+    font-size: 45px;
+}
+
+.price .price-title h2 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+}
+
+.price .price-pricing h2 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+.price .price-pricing h2 small {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 16px;
+    margin-left: -15px;
+}
+
+.price .price-body {
+    padding: 20px 0;
+    background: #ffffff;
+    border-radius: 30px 30px 0 0;
+    margin-top: -30px;
+    height: 350px;
+}
+
+.price .price-des ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.price .price-des ul li {
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.price .price-des ul li:last-child {
+    border: none;
+}
+
+.price .price-footer {
+    padding-bottom: 30px;
+    background: #ffffff;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.price .price-action1 a {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background: #CD7F32;
+    border-radius: 5px;
+    transition:  .3s;
+}
+
+.price .price-action2 a {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background: #C0C0C0;
+    border-radius: 5px;
+    transition:  .3s;
+}
+
+.price .price-action3 a {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 2px;
+    background: #FFD700;
+    border-radius: 5px;
+    transition:  .3s;
+}
+
+.price .price-action a i {
+    margin-right: 5px;
+}
+
+.price .price-action a:hover {
+    color: #ffffff;
+    background: #CCCCCCC;
+}
+
+.price .featured-item .price-action a {
+    color: #ffffff;
+    background: #CCCCCCC;
+}
+
+.price .featured-item .price-action a:hover {
+    color: #000000;
+    background: #77ad45;
+}
+
+
+/*******************************/
+/********** Form Plugin *********/
+/*******************************/
+.plugin {
+    position: relative;
+    align: center;
+    margin: 0;
+    padding: 60px 0 0 0;
+    background: #CCCCCCC;
+}
+
+.plugin h2 {
+    color: #000;
+    font-size: 45px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.plugin p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.plugin .form {
+    position: relative;
+}
+
+.plugin input {
+    height: 60px;
+    padding: 30px;
+    border: 2px solid #77ad45;    
+    border-radius: 7px;
+}
+
+.plugin .form-control {
+    margin: 2px 5px 2px 0;
+    height: 60px;
+    padding: 30px;
+    border: 2px solid #77ad45;    
+    border-radius: 7px;
+}
+
+.custom-select {
+     margin: 5px 0 5px 0;
+     height: 60px; 
+     padding: 30px;
+     border: 2px solid #77ad45;
+     border-radius: 7px;
+}
+
+.custom-select option selected {
+    color: #ccc;
+}
+
+.plugin .btn {
+    position: absolute;
+    margin-top: 20px;
+    width: 300px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight:400;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    background: #77ad45;
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.plugin .btn:hover {
+    color: #77ad45;
+    background: #000;
+}
+
+
+/*******************************/
+/******* Testimonial CSS *******/
+/*******************************/
+.testimonial {
+    margin-top: 100px;
+    position: relative;
+    padding: 45px 0;
+}
+
+.testimonial .testimonial-item {
+    position: relative;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.testimonial .testimonial-img {
+    width: 150px;
+    position: relative;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.testimonial .testimonial-item img {
+    margin: 0 auto;
+    height: 150px;
+    border-radius: 100px;
+    border: 10px solid #77AD45;
+}
+
+.testimonial .testimonial-content {
+    margin-top: -90px;
+    padding: 100px 25px 25px 25px;
+    text-align: center;
+    background: #000;
+    border-radius: 7px;
+}
+
+.testimonial .testimonial-item p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.testimonial .testimonial-content h3 {
+    color: #77ad45;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.testimonial .testimonial-content h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.testimonial .section-header a {
+    color: #000;
+}
+
+.testimonial .owl-nav,
+.testimonial .owl-dots {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.testimonial .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #77ad45;
+}
+
+.testimonial .owl-dot.active {
+    background: #CCCCCCC;
+}
+
+
+/*******************************/
+/*********** Blog CSS **********/
+/*******************************/
+.blog {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+}
+
+.blog .btn {
+    position: relative;
+    margin: 5px 10px 30px 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border: 1px #77ad45 solid;
+    border-radius: 7px;
+    background: #77ad45;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.blog .blog-item {
+    position: relative;
+    height: 550px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.blog .blog-item img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.blog .blog-item .meta {
+    padding: 0 30px 15px 30px;
+}
+
+.blog .blog-item .meta * {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #999999;
+}
+
+.blog .blog-item .meta i {
+    margin: 0 2px 0 10px;
+}
+
+.blog .blog-item .meta i:first-child {
+    margin-left: 0;
+}
+
+.blog .blog-item p {
+    padding: 0 30px;
+    font-size: 16px;
+}
+
+.blog .blog-item a.btn {
+    position: absolute;
+    bottom: 0px;
+    margin: 5px 30px 30px 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    background: #77ad45;
+    transition: .3s;
+}
+
+.blog .blog-item:hover a.btn {
+    color: #ffffff;
+    background: #CCCCCCC;
+    font-weight: bold;
+}
+
+.blog .blog-item a.btn:hover {
+    color: #000000;
+    background: #77ad45;
+}
+
+
+/*******************************/
+/******* Call to Action ********/
+/*******************************/
+.call-to-action {
+    position: relative;
+    margin: 45px 0;
+    padding: 60px 0;
+    background: #CCCCCCC;
+    border: 3px solid #77ad45;
+    border-radius: 7px;
+}
+
+.call-to-action h2 {
+    color: #000;
+    font-size: 45px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.call-to-action p {
+    margin: 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.call-to-action a {
+    float: right;
+    height: 60px;
+    padding: 16px 35px 14px 35px;
+    font-size: 18px;
+    font-weight:400;
+    text-transform: uppercase;
+    color: #fff;
+    background: #77ad45;
+    border-radius: 7px;
+}
+
+.call-to-action a:hover {
+    color: #77ad45;
+    background: #000;
+}
+
+
+
+/*******************************/
+/********* Pest CSS *********/
+/*******************************/
+.pest h3 {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.pest h2 {
+    text-align: center;
+    padding: 20px 0px 60px 0px;
+}
+
+.pest h5 {
+    font-size: 30px;
+    padding: 20px 0 20px 0;
+    text-align: left;
+} 
+
+.pest h4 {
+    color: #77ad45;
+    font-weight: bold;
+    font-size: 36px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.pest .container {
+    padding: 0px;
+}
+
+.pest .container img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.pest .col-lg-6 {
+    padding: 30px;
+}
+
+.pest .col-lg-4 {
+    padding: 30px;
+}
+
+.pest a.btn {
+    align: center;
+    bottom: 0px;
+    margin: 5px 30px 30px 30px;
+    padding: 10px 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    background: #77ad45;
+    transition: .3s;
+}
+
+.pest a.btn:hover {
+    color: #fff;
+    background: #000;
+}
+
+.pest h1 {
+    padding-top: 40px;
+    color: #77ad45;
+    font-weight: bold;
+}
+
+.pest .green {
+    color: #77ad45;
+    font-weight: bold;
+} 
+
+.pest a {
+    color: #77ad45;
+    font-weight: bold;
+}
+
+.pest a:hover {
+    color: #000;
+}
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    width: 100%;
+    position: relative;
+    margin-top: 45px;
+    padding-top: 90px;
+    background: #000;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.footer .footer-contact,
+.footer .footer-link,
+.footer .footer-form {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.footer .footer-contact h2,
+.footer .footer-link h2,
+.footer .footer-form h2{
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #77ad45;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer .footer-contact p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer .footer-contact p i {
+    width: 25px;
+}
+ 
+.footer .footer-contact a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer .footer-contact a:hover {
+    color: #77ad45;
+}
+
+.footer .footer-social {
+    position: relative;
+    margin-top: 25px;
+}
+
+.footer .footer-social a {
+    display: inline-block;
+}
+
+.footer .footer-social a i {
+    margin-right: 15px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.footer .footer-social a:last-child i {
+    margin: 0;
+}
+
+.footer .footer-social a:hover i {
+    color: #77ad45;
+}
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ffffff;   
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-link a:hover {
+    color: #77ad45;
+}
+
+.footer .footer-menu {
+    position: relative;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu .f-menu {
+    font-size: 0;
+    text-align: center;
+}
+
+.footer .footer-menu .f-menu a {
+    color: #ffffff;
+    font-size: 14px;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #ffffff;
+}
+
+.footer .footer-menu .f-menu a:hover {
+    color: #77ad45;
+}
+
+
+a:not([href]):hover {
+    color: #fff !important;
+}
+
+.footer .footer-menu .f-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+    color: fff;
+    font-size: 16px;
+}
+
+.licenses p {
+    color: #fff;
+}
+
+.footer .copyright {
+    padding: 30px 15px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .copyright p {
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+
+
