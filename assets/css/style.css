@@ -131,7 +131,7 @@ section {
 .hero {
   display: flex;
   flex-wrap: wrap;
-  background-image: url('/assets/images/guard-pest-control-residential-banner.jpeg');
+  background-image: url("/assets/images/guard-pest-control-residential-banner.jpeg");
   background-size: cover;
   background-position: center;
   position: relative;
