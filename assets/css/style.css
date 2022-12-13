@@ -293,8 +293,27 @@ footer .footer-links p {
   text-decoration: underline;
   border: 2px solid #77ad45;
   border-radius: 7px;
+  list-style-type: none;
 }
 
 .pricing li {
   padding: 10px;
+  color: #666666;
+}
+
+.pricing-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pricing-flex > div {
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .pricing-flex {
+    display: flex;
+    flex-direction: column;
+  }
 }
