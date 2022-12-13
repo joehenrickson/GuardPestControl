@@ -261,7 +261,7 @@ footer .social {
 footer .social a {
   font-size: 30px;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 footer .footer-links {
   padding-top: 30px;
@@ -269,11 +269,11 @@ footer .footer-links {
 }
 .footer-links p {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 footer .footer-links a {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
