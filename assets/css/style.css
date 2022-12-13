@@ -256,3 +256,45 @@ footer .footer-links {
 footer .footer-links p {
   text-align: center;
 }
+
+.pricing {
+  text-align: center;
+  padding: 10px;
+}
+
+.pricing h4 {
+  padding-top: 30px;
+  color: #666666;
+  font-size: 24px;
+}
+
+.pricing h3 {
+  font-size: 40px;
+  color: #666666;
+}
+
+.pricing img {
+  padding-top: 30px;
+}
+
+.pricing h2 a {
+  text-decoration: none;
+  color: #77ad45;
+  padding: 10px;
+}
+
+.price {
+  color: #000000;
+  font-size: 30px;
+}
+
+.pricing ul {
+  padding: 20px 0;
+  text-decoration: underline;
+  border: 2px solid #77ad45;
+  border-radius: 7px;
+}
+
+.pricing li {
+  padding: 10px;
+}
