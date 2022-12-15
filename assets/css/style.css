@@ -125,7 +125,7 @@ header img {
 .hero {
   display: flex;
   flex-wrap: nowrap;
-  background: url('/assets/images/Family3.jpeg');
+  background: url('assets/images/Family3.jpeg');
   background-attachment: fixed;
   background-position: 0% 100%;
   background-repeat: no-repeat;
@@ -302,7 +302,7 @@ footer .footer-links a {
 }
 
 .pricing {
-  background: url('/assets/images/residential-banner.jpeg');
+  background: url('assets/images/residential-banner.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
