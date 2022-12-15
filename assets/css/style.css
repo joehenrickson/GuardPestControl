@@ -302,7 +302,7 @@ footer .footer-links a {
 }
 
 .pricing {
-  background: url('./images/residential-banner.jpeg');
+  background: url('../images/residential-banner.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
