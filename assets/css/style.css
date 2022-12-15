@@ -125,7 +125,7 @@ header img {
 .hero {
   display: flex;
   flex-wrap: nowrap;
-  background: url('assets/images/Family3.jpeg');
+  background: url('../images/Family3.jpeg');
   background-attachment: fixed;
   background-position: 0% 100%;
   background-repeat: no-repeat;
